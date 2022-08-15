@@ -15,4 +15,4 @@ sudo ln -sf /etc/systemd/system/status-client.service ${ROOT_RO}/etc/systemd/sys
 sudo systemctl daemon-reload # optional if new
 sudo systemctl enable status-client
 
-echo Modify key configurations in /home/pi/ss/client-linux.py, then run "sudo systemctl start status-client"
+echo Modify key configurations in /home/pi/ss/client-linux.py then run "sudo systemctl start status-client"
