@@ -11,4 +11,4 @@ sudo mv /tmp/status-client.service /etc/systemd/system/
 sudo systemctl daemon-reload # optional if new
 sudo systemctl enable status-client
 
-echo Modify key configurations in /usr/local/ServerStatus/clients/client-linux.py, then run "sudo systemctl start status-client"
+echo Modify key configurations in /usr/local/ServerStatus/clients/client-linux.py then run "sudo systemctl start status-client"
