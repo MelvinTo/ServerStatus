@@ -16,5 +16,3 @@ sudo systemctl daemon-reload # optional if new
 sudo systemctl enable status-client
 
 echo Modify key configurations in /home/pi/ss/client-linux.py, then run "sudo systemctl start status-client"
-
-rm /tmp/client-linux.py
