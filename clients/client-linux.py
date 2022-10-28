@@ -411,7 +411,7 @@ if __name__ == '__main__':
                 array['tcp'], array['udp'], array['process'], array['thread'] = tupd()
                 array['io_read'] = diskIO.get("read")
                 array['io_write'] = diskIO.get("write")
-                array['ip_address'] = subprocess.check_output("ip -4 --br a show $(ip r | head -n 1 | awk '{print $5}') | awk '{print $3}'|awk -F/ '{print $1}'",shell=True).strip()
+                array['ip_address'] = subprocess.check_output("ip -4 --br a show $(ip r | head -n 1 | awk '{print $5}') | awk '{print $3}'|awk -F/ '{print $1}'",shell=True).strip().decode("utf-8")
 
                 s.send(byte_str("update " + json.dumps(array) + "\n"))
         except KeyboardInterrupt:
