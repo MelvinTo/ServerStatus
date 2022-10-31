@@ -77,6 +77,7 @@ class CMain
 			int64_t m_IORead;
 			int64_t m_IOWrite;
 			double m_CPU;
+			char m_IPAddress[512];
 			char m_aCustom[512];
 			// Options
 			bool m_Pong;
