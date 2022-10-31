@@ -198,7 +198,7 @@ int CMain::HandleMessage(int ClientNetID, char *pMessage)
 		if(rStart["online6"].type && pClient->m_ClientNetType == NETTYPE_IPV4)
 			pClient->m_Stats.m_Online6 = rStart["online6"].u.boolean;
 		if(rStart["ip_address"].type)
-			pClient->m_Stats.m_HDDUsed = rStart["ip_address"].u.string.ptr;
+			str_copy(pClient->m_Stats.m_IPAddress, rStart["ip_address"].u.string.ptr, sizeof(pClient->m_Stats.m_IPAddress));
 		if(rStart["custom"].type == json_string)
 			str_copy(pClient->m_Stats.m_aCustom, rStart["custom"].u.string.ptr, sizeof(pClient->m_Stats.m_aCustom));
 
