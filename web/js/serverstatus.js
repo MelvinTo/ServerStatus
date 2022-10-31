@@ -116,7 +116,7 @@ function uptime() {
 			TableRow.children["name"].innerHTML = result.servers[i].name;
 
 			// IP
-			TableRow.children["ip"].innerHTML = result.servers[i].ip_address;
+			TableRow.children["ip"].innerHTML = result.servers[i].ip_address || "-";
 
 			// Type
 			TableRow.children["type"].innerHTML = result.servers[i].type;
